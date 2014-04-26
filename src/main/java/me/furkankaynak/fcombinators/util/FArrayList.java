@@ -63,7 +63,6 @@ public class FArrayList<T> extends ArrayList<T> implements List<T>, Combinator<T
 
     @Override
     public Pair<FArrayList<T>, FArrayList<T>> partition(final F<T> f) {
-        Pair<FArrayList<T>, FArrayList<T>> returnList = new Pair<FArrayList<T>, FArrayList<T>>();
         FArrayList<T> first = new FArrayList<T>();
         FArrayList<T> second = new FArrayList<T>();
 
@@ -75,10 +74,7 @@ public class FArrayList<T> extends ArrayList<T> implements List<T>, Combinator<T
             }
         }
 
-        returnList.set_0(first);
-        returnList.set_1(second);
-
-        return returnList;
+        return new Pair<FArrayList<T>, FArrayList<T>>(first, second);
     }
 
     @Override
