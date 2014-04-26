@@ -1,4 +1,4 @@
-package me.furkankaynak.fcombinators;
+package me.furkankaynak.fcombinators.util;
 
 /**
  * Created by furkan on 4/23/14.

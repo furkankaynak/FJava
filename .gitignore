@@ -11,3 +11,4 @@
 *.swp
 *.class
 /build
+/src/main/java/examples
