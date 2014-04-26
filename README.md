@@ -70,6 +70,7 @@ public class Example {
 
         /*
         * map, filter, zip example
+        * M<T, R> . R is return type
          */
 
         ArrayList<Hi> map = fal.map(new M<Integer, Hi>() {
